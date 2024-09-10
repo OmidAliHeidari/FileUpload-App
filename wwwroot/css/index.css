@@ -1,0 +1,54 @@
+.container {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5%;
+  padding-top: 10%;
+}
+.container h1 {
+  font-size: 130px;
+  font-weight: 600;
+  color: black;
+}
+.container a {
+  font-size: 60px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container a span {
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 80px;
+    font-weight: 600;
+    color: black;
+  }
+  .container a {
+    font-size: 40px;
+    color: black;
+  }
+  .container a span {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: black;
+  }
+  .container a {
+    font-size: 20px;
+    color: black;
+  }
+  .container a span {
+    font-size: 20px;
+  }
+}

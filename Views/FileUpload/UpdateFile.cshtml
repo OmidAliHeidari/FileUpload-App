@@ -1,0 +1,29 @@
+@model FileUpload
+
+@section Style {
+    <link rel="stylesheet" href="~/css/uploadFile.css">
+}
+
+@{
+    ViewData["Title"] = "Update File";
+}
+
+<h1>Update File</h1>
+
+<form asp-action="UpdateFile" asp-route-id="@Model.FileUploadId" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="UploaderName">Enter Your Full Name</label>
+        <input asp-for="UploaderName" class="form-control" id="UploaderName" name="UploaderName" required
+            value="@Model.UploaderName">
+    </div>
+    <div class="form-group">
+        <label asp-for="Description">Enter Description</label>
+        <input asp-for="Description" class="form-control" id="Description" name="Description" required
+            value="@Model.Description">
+    </div>
+    <div class="form-group">
+        <label for="file">Select File (optional)</label>
+        <input type="file" class="form-control" id="file" name="file">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

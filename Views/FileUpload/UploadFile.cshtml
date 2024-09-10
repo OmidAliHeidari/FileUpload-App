@@ -1,0 +1,24 @@
+@model FileUpload
+@section Style{
+    <link rel="stylesheet" href="~/css/uploadFile.css">
+}
+@{
+    ViewData["Title"] = "Upload File";
+}
+
+<h1>Upload File</h1>
+<form asp-action="UploadFile" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label asp-for="UploaderName">Enter Your Full Name</label>
+        <input type="text" class="form-control" id="UploaderName" name="UploaderName" required>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description">Enter Description</label>
+        <input type="text" class="form-control" id="Description" name="Description" required>
+    </div>
+    <div class="form-group">
+        <label for="file">Select File</label>
+        <input type="file" class="form-control" id="file" name="file" required>
+    </div>
+    <button type="submit" class="btn">Upload</button>
+</form>

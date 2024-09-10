@@ -1,0 +1,44 @@
+@model IEnumerable<FileUpload>
+
+@section Style {
+    <link rel="stylesheet" href="~/css/UploadedFiles.css">
+}
+
+@{
+    ViewData["Title"] = "Uploaded Files";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="scrollable-table">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Uploader Name</th>
+                <th>File Name</th>
+                <th class="description">Description</th>
+                <th class="uploadTime">Upload Time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in Model)
+            {
+                <tr>
+                    <td>@file.UploaderName</td>
+                    <td>@file.FileName</td>
+                    <td class="description">@file.Description</td>
+                    <td class="uploadTime">@file.UploadTime.ToString("dd MMM yyyy HH:mm")</td>
+                    <td class="btn-table">
+                        <a class="btn btn-download"
+                            href="@Url.Action("DownloadFile", new { id = file.FileUploadId })">Download</a>
+                        <a class="btn btn-update" asp-action="UpdateFile" asp-route-id="@file.FileUploadId">Update</a>
+                        <form asp-action="DeleteFile" asp-route-id="@file.FileUploadId" method="post">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

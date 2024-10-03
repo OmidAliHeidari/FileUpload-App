@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ali/Desktop/Proje/FileUploadApp/FileUploadApp.csproj": {}
+    "/Users/ali/Desktop/Coding/Proje/FileUploadApp/FileUploadApp.csproj": {}
   },
   "projects": {
-    "/Users/ali/Desktop/Proje/FileUploadApp/FileUploadApp.csproj": {
+    "/Users/ali/Desktop/Coding/Proje/FileUploadApp/FileUploadApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ali/Desktop/Proje/FileUploadApp/FileUploadApp.csproj",
+        "projectUniqueName": "/Users/ali/Desktop/Coding/Proje/FileUploadApp/FileUploadApp.csproj",
         "projectName": "FileUploadApp",
-        "projectPath": "/Users/ali/Desktop/Proje/FileUploadApp/FileUploadApp.csproj",
+        "projectPath": "/Users/ali/Desktop/Coding/Proje/FileUploadApp/FileUploadApp.csproj",
         "packagesPath": "/Users/ali/.nuget/packages/",
-        "outputPath": "/Users/ali/Desktop/Proje/FileUploadApp/obj/",
+        "outputPath": "/Users/ali/Desktop/Coding/Proje/FileUploadApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ali/.nuget/NuGet/NuGet.Config"
